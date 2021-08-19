@@ -4,9 +4,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> Форма отзыва </title>
 </head>
-<body>
-    
+
+<body class="page-body">
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img class="page-header__logo-image" src="/HTML/998653-sedona-23/source/img/logotype-mobile .svg"
+      width="102px" height="84px" alt="logotype-mobile">
+    </a>
+    <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visible-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+                <li class="main-nav__item main-nav__item--current">
+                    <a class="main-nav__link" href="main.html">
+                        ГЛАВНАЯ
+                    </a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="catalog.html">
+                        ФОТО И ВИДЕО
+                    </a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="form.html">
+                        ФОРМА ОТЗЫВА
+                    </a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__link" href="academy.html">
+                        HTML ACADEMY
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+      <h1 class="visially-hidden">Форма отзыва</h1>
+
+      <section class="lead">
+        <h2 class="visially-hidden"></h2> <!--придумать заголовок-->
+        <div class="lead__wrapper">
+          <div class="lead__image image">
+            <img class="image__picture" src="/HTML/998653-sedona-23/source/img/back-desktop.jpg.png" width="902px" height="214px" alt="back-desktop">
+            <img class="image__text" src="/HTML/998653-sedona-23/source/img/SEDONA.svg" width="229px" height="39px" alt="sedona">
+            <img class="image__triangles" src="/HTML/998653-sedona-23/source/img/intro-triangles.svg" width="1201px" height="57px" alt="triangles">
+          </div>
+          <h3 class="lead__title">
+            ОСТАВЬТЕ СВОЙ ОТЗЫВ!
+          </h3>
+          <p class="lead__description">
+              ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАК ЖЕ О ПОСЕЩАЕМЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ
+          </p>
+        </div>
+      </section>
+      <div class="form__line"> <!--  серые разделители в форме-->
+
+      </div>
+
+      <section class="introduce">
+        <h2 class="introduce__title">Представьтесь</h2>
+        <form action="https://echo.htmlacademy.ru" method="GET">
+          <div class="introduce__name-wrapper">
+            <label for="name">ИМЯ*:</label>
+            <input class="introduce__input" type="text" id="name" name="name" value="Петр">
+          </div>
+          <div class="introduce__surname-wrapper">
+            <label for="surname">ФАМИЛИЯ:*</label>
+            <input class="introduce__surname" type="text" id="surname" name="surname" value="Иванов">
+          </div>
+          <div class="introduce__patronymic-wrapper">
+            <label for="patronymic">ОТЧЕСТВО</label>
+            <input class="introduce__patronymic" type="text" id="patronymic" name="patronymic" value="Александрович">
+          </div>
+        </form>
+      </section>
+      <div class="form__line"> </div> <!--  серые разделители в форме-->
+
+      <section class="contact_infotmation">
+        <h2 class="contact_infotmation__title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+        <div class="contact_infotmation__wrapper">
+          <form action="https://echo.htmlacademy.ru" method="GET">
+            <label for="phone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label> <br><!--я понимаю, что  br -это дичь,  пусть будет пока так-->
+            <input class="contact_infotmation__phone phone" id="phone" type="text" name="phone" value="Введите телефон">
+            <div class="phone__layer">
+              <img class="phone__icon" src="/HTML/998653-sedona-23/source/img/phone.svg" width="18px" height="18px" alt="phone-icon">
+            </div> <!--в стилях прописываем цвет фона и размеры-->
+          </form>
+        </div>
+        <div class="contact_infotmation__mail">
+          <form action="https://echo.htmlacademy.ru" method="GET">
+            <label for="mail">ЭЛЕКТРОННАЯ ПОЧТА*:</label> <br><!--я понимаю, что  br -это дичь,  пусть будет пока так-->
+            <input class="contact_infotmation__mail mail" type="text" id="mail" name="mail" value="Введите e-mail"> <!--можно ли классы и айдишники называть одинаково?-->
+            <div class="mail__layer">
+              <img class="mail__icon" src="/HTML/998653-sedona-23/source/img/mail.svg" width="16px" height="12px" alt="mail-icon">
+           </form>
+        </div>
+      </section>
+      <div class="form__line"> </div> <!--  серые разделители в форме-->
+
+      <section class="impression">
+        <h2 class="impression__title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ</h2>
+        <div class="impression__wrapper">
+          <form action ="https://echo.htmlacademy.ru" method="GET">
+            <input class="impression__radio" type="radio" name="plus" value="i1" checked>Скорее положительное <br>
+            <input class="impression__radio" type="radio" name="minus" value="i2">Скорее отрицательное <br>
+            <input class="impression__radio" type="radio" name="noanswer" value="i3">Затрудняюсь ответить<br>
+          </form>
+
+        </div>
+      </section>
+      <div class="form__line"> </div> <!--  серые разделители в форме-->
+
+      <section class="sight">
+        <h2 class="sight__title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ</h2>
+        <div class="sight__wrapper">
+          <form action="https://echo.htmlacademy.ru" method="GET">
+            <input class="sight__checked" type="checkbox" name="brige" value="c1" checked>Moст дьявола<br>
+            <input  class="sight__checked" type="checkbox" name="mountain" value="c2" checked>Гора-колокол<br>
+            <input class="sight__checked" type="checkbox" name="park" value="c3" checked>Слайд-парк<br>
+            <input class="sight__checked" type="checkbox" name="rocks" value="c4">Красные скалы<br>
+          </form>
+        </div>
+      </section>
+      <div class="form__line"> </div> <!--  серые разделители в форме-->
+
+      <section class="emotions">
+        <h2 class="emotions__title">ОПИШИТЕ СВОИ ЭМОЦИИ</h2>
+        <div class="emotions__wrapper">
+          <form action="https://echo.htmlacademy.ru" method="GET">
+            <textarea class="emotions__comment" id="comment-field" rows="10">Опишите подробно все свои восторги</textarea><br>
+            <input class="emotions__button" type="submit" name="button" value="Отправить"> <!-- или же сделать через button-->
+          </form>
+        </div>
+      </section>
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+      <div class="page-footer__hashtag hashtag">
+          <p class="hashtag__description">
+              #VISITSEDONA
+          </p>
+      </div>
+      <div class="page-footer__social social">
+          <ul class="social__list">
+              <li class="social__item">
+                  <a class="social__link social__link--twitter" href="https://twitter.com/sedona">
+                    <div class="social__link-layout">
+                      <img class="social__link-icon" src="/HTML/998653-sedona-23/source/img/icon-twitter.svg"
+                      width="18px"  height="15px">
+                    </div>
+
+                  </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--facebook" href="https://facebook.com/sedona">
+                  <div class="social__link-layout">
+                    <img class="social__link-icon" src="/HTML/998653-sedona-23/source/img/icon-facebook.svg.svg"
+                    width="18px"  height="15px">
+                  </div>
+                </a>
+            </li>
+            <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://youtube.com/sedona">
+                  <div class="social__link-layout">
+                    <img class="social__link-icon" src="/HTML/998653-sedona-23/source/img/icon-youtube.svg"
+                   width="18px"  height="15px">
+                  </div>
+                </a>
+            </li>
+         </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+          <div class="copyright__text">РАЗРАБОТАНО</div>
+          <a class="copyright__link">
+              <img class="copyright__image" src="/HTML/998653-sedona-23/source/img/htmlacademy.svg"
+               width="27px" height="34px" alt="htmlacademy">
+          </a>
+      </div>
+    </div>
+</footer>
+
 </body>
 </html>
