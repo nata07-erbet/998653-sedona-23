@@ -4,24 +4,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Фото и видео</title>
 </head>
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo">
-      <img class="page-header__logo-image" src="/Users/erbetnataly/998653-sedona-23/source/img/logotype-mobile .svg"
-      width="102px" height="84px" alt="Проект Седона">
+        <img class="page-header__logo-image" src="logotype-mobile.svg"
+        width="102px" height="84px" alt="Проект Седона">
     </a>
     <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visible-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
             <ul class="main-nav__list">
-                <li class="main-nav__item main-nav__item--current">
+                <li class="main-nav__item">
                     <a class="main-nav__link" href="main.html">
                         ГЛАВНАЯ
                     </a>
                 </li>
-                <li class="main-nav__item">
+                <li class="main-nav__item  main-nav__item--current">
                     <a class="main-nav__link" href="catalog.html">
                         ФОТО И ВИДЕО
                     </a>
@@ -48,80 +49,68 @@
       <div class="lead__wrapper">
         <h2 class="lead__title">ФОТО И ВИДЕО</h2>
         <p class="lead__text">
-        НЕ МОЖЕТЕ РЕШИТЬСЯ НА ПУТЕШЕСТВИЕ ИЗ-ЗА КУРСА?
-        ФОТОГРАФИИ ПОМОГУТ ВАМ ЗАБЫТЬ О ПОЛИТЕТКЕ И ЭКОНОМИКЕ
+          НЕ МОЖЕТЕ РЕШИТЬСЯ НА ПУТЕШЕСТВИЕ ИЗ-ЗА КУРСА?
+          ФОТОГРАФИИ ПОМОГУТ ВАМ ЗАБЫТЬ О ПОЛИТИКЕ И ЭКОНОМИКЕ.
         </p>
       </div>
     </section>
 
-    <section class="container">
-      <h2 class="visially-hidden">Просторы</h2>
-      <div class="container__сontent container__сontent--vastness">
-        <img class="container__image" src="/HTML/998653-sedona-23/source/img/photo-1-mobile.png"
-        width="280px" height="280px" alt="неродные просторы">
-        <h3 class="container__title">НЕРОДНЫЕ ПРОСТОРЫ</h3>
-        <p class="container__text">Фото автор: Борис</p>
-         <div class="container__likes">
-           <img class="container__likes-icon" src="/HTML/998653-sedona-23/source/img/like-icon.svg"
-           width="23px" height="21px" alt="likes-icon">
-           <p class="container__likes-count">1350</p>
-         </div>
+    <section class="gallery">
+      <h2 class="gallery__title">Галерея картинок</h2>
+      <div class="gallery__wrapper">
+        <ul class="gallery__list">
+          <li class="gallery__list-item photo">
+            <img class="photo__image" src="photo-1-mobile.jpg"
+              width="280" height="280" alt="неродные просторы">
+              <h3 class="photo__title">НЕРОДНЫЕ ПРОСТОРЫ</h3>
+              <p class="photo__text">Фото автор: Борис</p>
+              <div class="photo__likes">
+                <img class="photo__likes-icon" src="like-icon.svg"
+                width="23" height="21" alt="likes-icon">
+                <p class="photo__likes-count">1350</p>
+              </div>
+            </li>
+            <li class="gallery__list-item photo">
+              <img class="photo__image" src="/photo-2-mobile.jpg"
+              width="280" height="280" alt="местная растительность">
+              <h3 class="photo__title">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</h3>
+              <p class="photo__text">Фото автор: Сергей</p>
+              <div class="photo__likes">
+                <img class="photo__likes-icon" src="like-icon.svg"
+                width="23px" height="21px" alt="likes-icon">
+                <p class="photo__likes-count">143</p>
+              </div>
+            </li>
+            <li class="gallery__list-item photo">
+              <img class="photo__image" src="photo-3-mobile.jpg"
+              width="280" height="280" alt="дорога на север">
+              <h3 class="photo__title">ДОРОГА НА СЕВЕР</h3>
+              <p class="photo__text">Фото автор: Петр</p>
+              <div class="photo__likes">
+                <img class="photo__likes-icon" src="like-icon.svg"
+                width="23" height="21" alt="likes-icon">
+                <p class="photo__likes-count">96</p>
+              </div>
+            </li>
+            <li class="gallery__list-item photo">
+              <img class="photo__image" src="photo-4-desktop 1.jpg"
+              width="280" height="280px" alt="мост дьявола">
+              <h3 class="photo__title">МОСТ ДЬЯВОЛА</h3>
+              <p class="photo__text">Фото автор: Антон</p>
+              <div class="photo__likes">
+                <img class="photo__likes-icon" src="like-icon.svg"
+                width="23" height="21" alt="likes-icon">
+                <p class="photo__likes-count">254</p>
+              </div>
+            </li>
+        </ul>
       </div>
     </section>
-    <div class="line"></div> <!--  серые разделители на странице-->
 
-    <section class="container">
-      <h2 class="visially-hidden">Растительность</h2>
-      <div class="container__сontent container__сontent--vastness">
-        <img class="container__image" src="/HTML/998653-sedona-23/source/img/photo-2-mobile.png"
-        width="280px" height="280px" alt="местная растительность">
-        <h3 class="container__title">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</h3>
-        <p class="container__text">Фото автор: Сергей</p>
-         <div class="container__likes">
-           <img class="container__likes-icon" src="/HTML/998653-sedona-23/source/img/like-icon.svg"
-           width="23px" height="21px" alt="likes-icon">
-           <p class="container__likes-count">143</p>
-         </div>
-      </div>
-    </section>
-    <div class="line"></div> <!--  серые разделители на странице-->
-
-    <section class="container">
-      <h2 class="visially-hidden">Дорога</h2>
-      <div class="container__сontent container__сontent--vastness">
-        <img class="container__image" src="/HTML/998653-sedona-23/source/img/photo-3-mobile.png"
-        width="280px" height="280px" alt="догора на север">
-        <h3 class="container__title">ДОРОГА НА СЕВЕР</h3>
-        <p class="container__text">Фото автор: Петр</p>
-         <div class="container__likes">
-           <img class="container__likes-icon" src="/HTML/998653-sedona-23/source/img/like-icon.svg"
-           width="23px" height="21px" alt="likes-icon">
-           <p class="container__likes-count">96</p>
-         </div>
-      </div>
-    </section>
-    <div class="line"></div> <!--  серые разделители на странице-->
-
-    <section class="container">
-      <h2 class="visially-hidden">Мост</h2>
-      <div class="container__сontent container__сontent--vastness">
-        <img class="container__image" src="/HTML/998653-sedona-23/source/img/photo-4-desktop 1.png"
-        width="280px" height="280px" alt="мост дьявола">
-        <h3 class="container__title">МОСТ ДЬЯВОЛА</h3>
-        <p class="container__text">Фото автор: Антон</p>
-         <div class="container__likes">
-           <img class="container__likes-icon" src="/HTML/998653-sedona-23/source/img/like-icon.svg"
-           width="23px" height="21px" alt="likes-icon">
-           <p class="container__likes-count">254</p>
-         </div>
-      </div>
-    </section>
-    <div class="line"></div> <!--  серые разделители на странице-->
-
-    <section class="lead lead--video">
-      <div class="lead__wrapper">
-        <h2 class="lead__title">ВСЕ ЕЩЕ СОМНЕВАЕТЕСЬ?</h2>
-        <p class="lead__text">
+    <section class="videopresentation">
+      <div class="videopresentation__wrapper">
+        <h2 class="videopresentation__title">ВСЕ ЕЩЕ СОМНЕВАЕТЕСЬ?</h2>
+        <p class="videopresentation__text">
         СМОТРИТЕ ВИДЕОПРЕЗЕНТАЦИЮ И СКОРЕЕ ЗА БИЛЕТАМИ,
         ПОКА ОНИ НЕ ПОДОРОЖАЛИ В ОЧЕРЕДНОЙ РАЗ!
         </p>
@@ -132,43 +121,34 @@
   <footer class="page-footer">
     <div class="page-footer__wrapper">
         <div class="page-footer__hashtag hashtag">
-            <p class="hashtag__description">
                 #VISITSEDONA
-            </p>
         </div>
         <div class="page-footer__social social">
             <ul class="social__list">
-                <li class="social__item">
-                    <a class="social__link social__link--twitter" href="https://twitter.com/sedona">
-                      <div class="social__link-layout">
-                        <img class="social__link-icon" src="/HTML/998653-sedona-23/source/img/icon-twitter.svg"
-                        width="18px"  height="15px">
-                      </div>
-
-                    </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link social__link--facebook" href="https://facebook.com/sedona">
-                    <div class="social__link-layout">
-                      <img class="social__link-icon" src="/HTML/998653-sedona-23/source/img/icon-facebook.svg.svg"
-                      width="18px"  height="15px">
-                    </div>
+              <li class="social__item">
+                <a class="social__link social__link--twitter" href="https://twitter.com/sedona">
+                    <img class="social__link-icon" src="icon-twitter.svg"
+                    width="18px"  height="15px">
                   </a>
               </li>
               <li class="social__item">
-                  <a class="social__link social__link--youtube" href="https://youtube.com/sedona">
-                    <div class="social__link-layout">
-                      <img class="social__link-icon" src="/HTML/998653-sedona-23/source/img/icon-youtube.svg"
+                <a class="social__link social__link--facebook" href="https://facebook.com/sedona">
+                    <img class="social__icon" src="icon-facebook.svg"
+                    width="18px"  height="15px">
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link social__link--youtube" href="https://youtube.com/sedona">
+                    <img class="social__link-icon" src="icon-youtube.svg"
                      width="18px"  height="15px">
-                    </div>
-                  </a>
+                </a>
               </li>
            </ul>
         </div>
         <div class="page-footer__copyright copyright">
             <div class="copyright__text">РАЗРАБОТАНО</div>
             <a class="copyright__link">
-                <img class="copyright__image" src="/HTML/998653-sedona-23/source/img/htmlacademy.svg"
+                <img class="copyright__image" src="htmlacademy.svg"
                  width="27px" height="34px" alt="htmlacademy">
             </a>
         </div>
