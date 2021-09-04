@@ -13,7 +13,7 @@
 <body class="page-body">
   <header class="page-header">
     <a class="page-header__logo">
-        <img class="page-header__logo-image" src="logotype-mobile.svg"
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg"
         width="102px" height="84px" alt="Проект Седона">
     </a>
     <nav class="main-nav">
@@ -52,8 +52,8 @@
         <h2 class="visially-hidden">ОСТАВЬТЕ СВОЙ ОТЗЫВ!</h2>
         <div class="lead__wrapper">
           <div class="lead__image image">
-            <img class="image__picture" src="back-desktop.jpg" width="902px" height="214px" alt="back-desktop">
-            <img class="image__text" src="SEDONA.svg" width="229px" height="39px" alt="sedona">
+            <img class="image__picture" src="img/back-desktop.jpg" width="902px" height="214px" alt="back-desktop">
+            <img class="image__text" src="img/SEDONA.svg" width="229px" height="39px" alt="sedona">
           </div>
           <h3 class="lead__title">
             ОСТАВЬТЕ СВОЙ ОТЗЫВ!
@@ -63,7 +63,7 @@
           </p>
         </div>
       </section>
-      <div class="form__line"> <!--  серые разделители в форме-->
+
 
       </div>
 
@@ -83,61 +83,73 @@
               <input class="introduce__patronymic" type="text" id="patronymic" name="patronymic" value="Александрович">
             </div>
         </section>
-    </form>
 
 
-    <form action="https://echo.htmlacademy.ru" method="GET">
+
+
       <section class="contact_infotmation">
         <h2 class="contact_infotmation__title">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
         <div class="contact_infotmation__wrapper">
             <label for="phone">КОНТАКТНЫЙ ТЕЛЕФОН*:</label> <br>
             <input class="contact_information__input contact_information__input--phone" id="contacts-phone" type="text" name="phone" value="Введите телефон">
             <div class="phone__layer">
-              <img class="phone__icon" src="phone.svg" width="18px" height="18px" alt="phone-icon">
+              <img class="phone__icon" src="img/phone.svg" width="18px" height="18px" alt="phone-icon">
             </div>
         </div>
         <div class="contact_infotmation__mail">
             <label for="mail">ЭЛЕКТРОННАЯ ПОЧТА*:</label> <br>
             <input class="contact_information__input contact_information__input--mail" type="text" id="contacts-mail" name="mail" value="Введите e-mail"> <!--сделать через псевдоэлементы-->
-            <img class="mail__icon" src="/mail.svg" width="16px" height="12px" alt="mail-icon">
+            <img class="mail__icon" src="img/mail.svg" width="16px" height="12px" alt="mail-icon">
         </div>
       </section>
-    </form>
 
 
-    <form action ="https://echo.htmlacademy.ru" method="GET">
+
+
       <section class="impression">
         <h2 class="impression__title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ</h2>
         <div class="impression__wrapper">
-            <input class="impression__radio" type="radio" name="plus" value="positive" checked>Скорее положительное <br>
-            <input class="impression__radio" type="radio" name="minus" value="negative">Скорее отрицательное <br>
-            <input class="impression__radio" type="radio" name="noanswer" value="neutral">Затрудняюсь ответить<br>
-          </form>
+           <label>
+              <input class="impression__radio" type="radio" name="check" value="positive" checked>Скорее положительно
+            </label>
+            <label>
+              <input class="impression__radio" type="radio" name="check" value="negative">Скорее отрицательное
+            </label>
+            <label>
+              <input class="impression__radio" type="radio" name="check" value="neutral">Затрудняюсь ответить
+            </label>
         </div>
       </section>
-    </form>
 
 
-    <form action="https://echo.htmlacademy.ru" method="GET">
+
+
       <section class="sight">
         <h2 class="sight__title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ</h2>
         <div class="sight__wrapper">
-            <input class="sight__checkbox" type="checkbox" name="brige" value="c1" checked>Moст дьявола<br>
-            <input  class="sight__checkbox" type="checkbox" name="mountain" value="c2" checked>Гора-колокол<br>
-            <input class="sight__checkbox" type="checkbox" name="park" value="c3" checked>Слайд-парк<br>
-            <input class="sight__checkbox" type="checkbox" name="rocks" value="c4">Красные скалы<br>
+            <input class="sight__checkbox" type="checkbox" name="brige" value="brige" checked>
+            <label for="brige">Мoст дьявола</label>
+            <input  class="sight__checkbox" type="checkbox" name="mountain" value="mountain" checked>
+            <label  for="mountain">Гора-колокол</label>
+            <input class="sight__checkbox" type="checkbox" name="park" value="park" checked>
+            <label for="park">Слайд-парк</label>
+            <input class="sight__checkbox" type="checkbox" name="rocks" value="rocks">
+            <label for="rocks">Красные скалы</label>
          </div>
       </section>
-    </form>
 
-    <form action="https://echo.htmlacademy.ru" method="GET">
+
+
         <section class="emotions">
           <h2 class="emotions__title">ОПИШИТЕ СВОИ ЭМОЦИИ</h2>
           <div class="emotions__wrapper">
-            <textarea class="emotions__comment" id="comment-field" rows="10">Опишите подробно все свои восторги</textarea><br>
-            <input class="emotions__button" type="submit" name="button" value="Отправить">
-      </section>
-    </form>
+            <textarea class="emotions__comment" id="comment-field" rows="10">Опишите подробно все свои восторги</textarea>
+            </section>
+            <section class="search-hotel">
+              <button class="search-hotel__button" type="submit">НАЙТИ ГОСТИНИЦУ</button>
+            </section>
+
+     </form>
 </main>
 
 <footer class="page-footer">
@@ -149,19 +161,19 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--twitter" href="https://twitter.com/sedona">
-                  <img class="social__link-icon" src="icon-twitter.svg"
+                  <img class="social__link-icon" src="img/icon-twitter.svg"
                   width="18px"  height="15px">
                 </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://facebook.com/sedona">
-                  <img class="social__icon" src="icon-facebook.svg"
+                  <img class="social__icon" src="img/icon-facebook.svg"
                   width="18px"  height="15px">
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://youtube.com/sedona">
-                  <img class="social__link-icon" src="icon-youtube.svg"
+                  <img class="social__link-icon" src="img/icon-youtube.svg"
                    width="18px"  height="15px">
               </a>
             </li>
@@ -170,7 +182,7 @@
       <div class="page-footer__copyright copyright">
           <div class="copyright__text">РАЗРАБОТАНО</div>
           <a class="copyright__link">
-              <img class="copyright__image" src="htmlacademy.svg"
+              <img class="copyright__image" src="img/htmlacademy.svg"
                width="27px" height="34px" alt="htmlacademy">
           </a>
       </div>
