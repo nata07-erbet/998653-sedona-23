@@ -1,32 +1,42 @@
 .page-main {
-  width: 320px;
-}
-
-.visially-hidden {}
-
-.page-main__wrapper-image {
-  width: 320px;
-  height: 389px;
-
+    width: 320px;
+    height: 3387px;
   }
+  .visially-hidden {
+    visibility: hidden;}
 
-  .page-main__image {
-    height: 100%;
-    width: auto;
-  }
+    .page-main_wrapper {
+      width: 320px ;
+      height: 398px;
+      position: relative;
+      top:0px;
+      left:0;
 
-.page-main__wrapper-text {
-   height: 214px;
-   width: 282px;
-   position: absolute;
-   top: 146px;
-   left:19px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
 
-}
+    }
 
-.page-main__text-image {
+    .page-main__wrapper-image {
+      width: 320px ;
+      height: 398px;
+      position: absolute;
+    }
 
-}
+    .page-main__image {
+      height: 100%;
+      width: auto;
+      overflow: hidden;
+    }
+
+
+    .page-main__text {
+      width: 282px;
+      height: 214px;
+
+      position: absolute;
+      z-index: 1;
+      top:90px;
+      bottom: 85px; /*почему я не могу передвинуть этот элемент?*/
+      left: auto;
+      right: auto;
+
+    }

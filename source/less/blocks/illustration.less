@@ -1,74 +1,71 @@
-.illustration--city{
-  width: 320x;
-   height: 191px;
-   background-color:#81B3D2;
+
+/*ПОСЛЕ НАПИСАНИЯ ЗДЕСЬ СТИЛЕЙ У МЕНЯ ПОПЛЫЛА ВСЯ РАЗМЕТКА. НЕ МОГУ ПОНЯТЬ ПОЧЕМУ. СТИЛИ ПЕРЕПИСЫВАЛА 3 РАЗА С НУЛЯ */
+.illustration{
 
 }
+.illustration.illustration--city,
+.illustration.illustration--brige {
 
+  /*display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; когла делаю флексами - блок плывет наверх*/
+  width: 320px;
+  height: 227px;
+  background-color: #81B3D2;
+}
 
-.illustration__title {
-  margin-top: 39px;
-  text-align: center;
-  font-family: PT Sans;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  color: #FFFFFF;}
-
-.illustration__number {
+.illustration__title { /*зоголовок вылезат за пределы блока- не могу понять в чем дело*/
 font-family: PT Sans;
 font-style: normal;
-font-weight: 400;
+font-weight: bold;
 font-size: 18px;
 line-height: 26px;
-margin-left:auto;
-margin-right: auto;
+color: #FFFFFFFF;
 
-align-items: center;
 text-align: center;
 text-transform: uppercase;
-color: #FFFFFF;
+
+margin-top: 55px;
+margin-bottom: 21px;
 
 }
+
+
+.illustration__number {
+  font-family: PT Sans;
+  font-style: normal;
+  font-weight: regular;
+  font-size: 14x;
+  line-height: 21px;
+  color: #FFFFFFFF;
+
+text-align: center;
+text-transform: uppercase;
+
+}
+
 .illustration__description {
 font-family: PT Sans;
 font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 26px;
+font-weight: regular;
+font-size: 14x;
+line-height: 21px;
+color: #FFFFFFFF;
 
-align-items: center;
 text-align: center;
 text-transform: uppercase;
-color: #FFFFFF;
-margin-bottom: 35px;
 }
 
 .illustration__image-wrapper {
-  position: relative;
   width: 320px;
   height: 260px;
   overflow: hidden;
-
 }
 
-.image__wrapper-city-image {
+.illustration__city-image {
   height: 100%;
   width: auto;
-  margin-left: auto;
-  margin-right: auto;
-
-
 }
 
-.illustration--brige {
-  width: 320x;
-  height: 191px;
-  background-color:#81B3D2;
-}
 
-.illustration__brige-image {
-  height: 100%;
-
-}
